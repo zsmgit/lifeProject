@@ -1,0 +1,22 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0,minimal-ui"><script type=text/javascript>!(function(window) {
+			    var html = document.documentElement,
+			        dpr = window.devicePixelRatio || 1,
+			        resize = 'orientationchange' in window ? 'orientationchange' : 'resize',
+			        setHtmlFontSize = function() {
+			            var htmlWidth = html.getBoundingClientRect().width || 500;
+			            (1 == dpr || htmlWidth > 500) && (htmlWidth = 500),
+			                (html.style.fontSize = htmlWidth / 5 + 'px');// 根据此限制不同屏幕宽度下的字体大小
+			        };
+			    html.setAttribute('data-dpr', dpr),
+			        document.addEventListener &&
+			            (window.addEventListener(resize, setHtmlFontSize, !1),
+			            'complete' === document.readyState ||
+			                document.addEventListener(
+			                    'DOMContentLoaded',
+			                    function() {
+			                        setTimeout(setHtmlFontSize);
+			                    },
+			                    !1
+			                ));
+			
+			})(window);</script><title>wuyanlife</title><link href=/static/css/app.ff931c957a9dee5f22c38405b45676d1.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=/static/js/manifest.06a5a87b960c49fe581d.js></script><script type=text/javascript src=/static/js/vendor.10ab777ebca5436b6470.js></script><script type=text/javascript src=/static/js/app.f37cd167407da1da7fd4.js></script></body></html>
